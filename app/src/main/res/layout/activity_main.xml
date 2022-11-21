@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#0935D0">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="48dp"
+        android:adjustViewBounds="true"
+        android:background="@mipmap/logo"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nameApp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:fontFamily="@font/montserrat_alternates_semibold"
+        android:text="@string/vacancia"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnEntrarCuenta"
+        android:layout_width="175dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/button_light"
+        android:text="Entrar"
+        android:textColor="#0F2B46"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameApp" />
+
+<!-- Para color del boton android:backgroundTint=""-->
+    <!-- android:backgroundTint="#0935D0" -->
+    <Button
+        android:id="@+id/btnCrearCruenta"
+        android:layout_width="175dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:text="Crear Cuenta"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrarCuenta" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

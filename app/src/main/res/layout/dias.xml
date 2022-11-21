@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/king_blue">
+
+
+    <ImageButton
+        android:id="@+id/imgBtnDiasBefore"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="34dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/before_small"/>
+
+
+    <TextView
+        android:id="@+id/txtDiasPregunta"
+        android:layout_width="211dp"
+        android:lineHeight="25dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="73dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Por cuantos días quiere salir?"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnDiasBefore" />
+
+    <ImageView
+        android:id="@+id/imgDiasIconPeso"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/icon_peso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDiasPregunta" />
+
+    <View
+        android:id="@+id/lineMoneyDias"
+        android:layout_width="2dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="50dp"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/imgDiasIconPeso"
+        app:layout_constraintTop_toBottomOf="@+id/txtDiasPregunta" />
+
+    <EditText
+        android:id="@+id/editDias"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_blue"
+        android:fontFamily="@font/montserrat_medium"
+        android:hint="5"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFF"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lineMoneyDias"
+        app:layout_constraintTop_toBottomOf="@+id/txtDiasPregunta" />
+
+    <ImageButton
+        android:id="@+id/imgBtnDiasNext"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDias"
+        android:background="@mipmap/next"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

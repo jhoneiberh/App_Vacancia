@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/king_blue"
+    tools:context=".ScreenMenu" >
+
+
+    <ImageView
+        android:id="@+id/imgMiCuentaOvalo"
+        android:layout_width="450dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="-105dp"
+        android:src="@drawable/ovalo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/imgBtnMenuBefore"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/before_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--
+    <Button
+        android:id="@+id/btnMenuMiCuenta"
+        android:layout_width="175dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_light"
+        android:text="Mi cuenta"
+        android:textColor="#0F2B46"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMiCuentaOvalo" />
+
+    <Button
+        android:id="@+id/btnmenuBuscarCiudad"
+        android:layout_width="175dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="51dp"
+        android:background="@drawable/button_light"
+        android:text="Busca ciudad"
+        android:textColor="#0F2B46"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMenuMiCuenta" />
+
+    <Button
+        android:id="@+id/btnMenuAcercaDe"
+        android:layout_width="175dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/button_light"
+        android:text="Acerca de"
+        android:textColor="#0F2B46"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnmenuBuscarCiudad" /> -->
+
+
+    <ImageButton
+        android:id="@+id/btnMenuMiCuenta"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/icon_mi_cuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMiCuentaOvalo" />
+
+    <ImageButton
+        android:id="@+id/btnmenuBuscarCiudad"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+
+        android:layout_marginTop="5dp"
+        android:background="@drawable/icon_search_city"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMenuMiCuenta" />
+
+    <ImageButton
+        android:id="@+id/btnMenuAcercaDe"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/icon_acerca_de"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnmenuBuscarCiudad" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
